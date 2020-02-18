@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/event_title"
+            android:hint="Event Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            />
+        <EditText
+            android:id="@+id/event_des"
+            android:hint="Event Description"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            />
+        <EditText
+            android:id="@+id/event_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            android:hint="Event Start Time"
+            />
+        <EditText
+            android:id="@+id/event_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Event End Time"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:hint="Event Location"
+            android:ems="15"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_google_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Integration Calender"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_list_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Events List"
+        android:textAllCaps="false" />
+</RelativeLayout>
